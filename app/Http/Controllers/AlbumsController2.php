@@ -27,9 +27,7 @@ class AlbumsController2 extends Controller
         return view('admin.albums2.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+    
     public function store(Request $request)
     {
         $album = Album::create([
@@ -51,9 +49,6 @@ class AlbumsController2 extends Controller
         return redirect()->route('albums2.index');
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(Album $album)
     {
         $album->load('pics');
@@ -69,9 +64,7 @@ class AlbumsController2 extends Controller
         return view('admin.albums2.edit', compact('album'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+  
     public function update(Request $request, Album $album)
     {
 

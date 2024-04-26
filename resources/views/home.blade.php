@@ -9,11 +9,14 @@
 
                     <div class="card-body">
 
-                        <a href="{{ route('albums.index') }}" class="btn btn-info">Albums with dropzone</a>
-
-
-
-                        <a href="{{ route('albums1.index') }}" class="btn btn-success">Albums List using js</a>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="{{ route('albums.index') }}" class="btn btn-info">Albums with dropzone</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="{{ route('albums1.index') }}" class="btn btn-success">Albums List using js</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

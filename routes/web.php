@@ -25,10 +25,6 @@ Route::post('/albums/transfer-pics/{id}', [App\Http\Controllers\AlbumController:
 
 
 
-
-
-
-
 Route::get('/albums1/index', [App\Http\Controllers\AlbumsController2::class, 'index'])->name('albums1.index');
 Route::get('/albums1/create', [App\Http\Controllers\AlbumsController2::class, 'create'])->name('albums1.create');
 Route::post('/albums1/store', [App\Http\Controllers\AlbumsController2::class, 'store'])->name('albums1.store');

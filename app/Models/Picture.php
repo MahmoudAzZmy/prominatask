@@ -29,4 +29,5 @@ class Picture extends Model implements HasMedia
     {
         return $this->belongsTo(Album::class, 'album_id');
     }
+    
 }
