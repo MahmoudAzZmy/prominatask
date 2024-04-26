@@ -23,5 +23,23 @@ Route::delete('/albums/destroy/{album}', [App\Http\Controllers\AlbumController::
 Route::get('/albums/transfer-pics-blade/{id}', [App\Http\Controllers\AlbumController::class, 'transferPicsBlade'])->name('albums.transfer-pics-blade');
 Route::post('/albums/transfer-pics/{id}', [App\Http\Controllers\AlbumController::class, 'transferPic'])->name('albums.transfer-pics');
 
-Route::post('/albums/storeMedia', [App\Http\Controllers\AlbumController::class, 'storeMedia'])->name('albums.storeMedia');
-Route::post('/albums/ckmedia', [App\Http\Controllers\AlbumController::class, 'storeCKEditorImages'])->name('storeCKEditorImages');
+
+
+
+
+
+
+Route::get('/albums1/index', [App\Http\Controllers\AlbumsController2::class, 'index'])->name('albums1.index');
+Route::get('/albums1/create', [App\Http\Controllers\AlbumsController2::class, 'create'])->name('albums1.create');
+Route::post('/albums1/store', [App\Http\Controllers\AlbumsController2::class, 'store'])->name('albums1.store');
+Route::get('/albums1/show/{album}', [App\Http\Controllers\AlbumsController2::class, 'show'])->name('albums1.show');
+Route::get('/albums1/edit/{album}', [App\Http\Controllers\AlbumsController2::class, 'edit'])->name('albums1.edit');
+Route::put('/albums1/update/{album}', [App\Http\Controllers\AlbumsController2::class, 'update'])->name('albums1.update');
+Route::delete('/albums1/destroy/{album}', [App\Http\Controllers\AlbumsController2::class, 'destroy'])->name('albums1.destroy');
+
+Route::get('/albums1/transfer-pics-blade/{id}', [App\Http\Controllers\AlbumsController2::class, 'transferPicsBlade'])->name('albums1.transfer-pics-blade');
+Route::post('/albums1/transfer-pics/{id}', [App\Http\Controllers\AlbumsController2::class, 'transferPic'])->name('albums1.transfer-pics');
+
+
+Route::post('/albums/storeMedia', [App\Http\Controllers\AlbumsController2::class, 'storeMedia'])->name('albums.storeMedia');
+Route::post('/albums/ckmedia', [App\Http\Controllers\AlbumsController2::class, 'storeCKEditorImages'])->name('storeCKEditorImages');

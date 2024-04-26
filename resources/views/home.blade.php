@@ -8,13 +8,12 @@
                     <div class="card-header">{{ __('Dashboard') }}</div>
 
                     <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-                        <a href="{{ route('albums.index') }}" class="btn btn-info">Albums List</a>
-                        {{ __('You are logged in!') }}
+
+                        <a href="{{ route('albums.index') }}" class="btn btn-info">Albums with dropzone</a>
+
+
+
+                        <a href="{{ route('albums1.index') }}" class="btn btn-success">Albums List using js</a>
                     </div>
                 </div>
             </div>
