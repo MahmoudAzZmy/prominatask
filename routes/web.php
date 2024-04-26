@@ -36,10 +36,3 @@ Route::get('/albums1/show/{album}', [App\Http\Controllers\AlbumsController2::cla
 Route::get('/albums1/edit/{album}', [App\Http\Controllers\AlbumsController2::class, 'edit'])->name('albums1.edit');
 Route::put('/albums1/update/{album}', [App\Http\Controllers\AlbumsController2::class, 'update'])->name('albums1.update');
 Route::delete('/albums1/destroy/{album}', [App\Http\Controllers\AlbumsController2::class, 'destroy'])->name('albums1.destroy');
-
-Route::get('/albums1/transfer-pics-blade/{id}', [App\Http\Controllers\AlbumsController2::class, 'transferPicsBlade'])->name('albums1.transfer-pics-blade');
-Route::post('/albums1/transfer-pics/{id}', [App\Http\Controllers\AlbumsController2::class, 'transferPic'])->name('albums1.transfer-pics');
-
-
-Route::post('/albums/storeMedia', [App\Http\Controllers\AlbumsController2::class, 'storeMedia'])->name('albums.storeMedia');
-Route::post('/albums/ckmedia', [App\Http\Controllers\AlbumsController2::class, 'storeCKEditorImages'])->name('storeCKEditorImages');
